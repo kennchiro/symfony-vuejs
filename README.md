@@ -26,12 +26,4 @@ yarn watch
 docker-compose exec apache bash
 php bin/console doctrine:fixtures:load
 ```
-## navigate project
-```shell
-andrana.com
-```
-
-## navigate api project
-```shell
-andrana.com/api
 ```
