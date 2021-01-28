@@ -1,0 +1,239 @@
+<?php //resource_metadata_06cf21d6b3a726a1deadff4ee9d763bd
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata')),
+    ],
+    null,
+    [
+        'ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata' => [
+            'shortName' => [
+                'User',
+            ],
+            'description' => [
+                '',
+            ],
+            'itemOperations' => [
+                [
+                    'api_user_login' => [
+                        'method' => 'POST',
+                        'route_name' => 'api_user_login',
+                        'controller' => 'App\\Controller\\UserController',
+                        'swagger_context' => [
+                            'summary' => 'Login user',
+                            'parameters' => [
+                                [
+                                    'name' => 'body',
+                                    'in' => 'body',
+                                    'schema' => [
+                                        'type' => 'object',
+                                        'properties' => [
+                                            'email' => [
+                                                'type' => 'string',
+                                                'description' => 'email of user',
+                                            ],
+                                            'password' => [
+                                                'type' => 'string',
+                                                'description' => 'password of user',
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                            'responses' => [
+                                200 => [
+                                    'description' => 'Utilisateur connecté',
+                                    'schema' => [
+                                        'type' => 'object',
+                                        'properties' => [
+                                            'token' => [
+                                                'type' => 'string',
+                                                'description' => 'token of user connected',
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                    'user_update' => [
+                        'method' => 'POST',
+                        'route_name' => 'user_update',
+                        'controller' => 'App\\Controller\\UserController',
+                        'swagger_context' => [
+                            'summary' => 'Update User',
+                            'parameters' => [
+                                [
+                                    'name' => 'body',
+                                    'in' => 'body',
+                                    'schema' => [
+                                        'type' => 'object',
+                                        'properties' => [
+                                            'id' => [
+                                                'type' => 'integer',
+                                                'description' => 'id',
+                                            ],
+                                            'email' => [
+                                                'type' => 'string',
+                                                'description' => 'email',
+                                            ],
+                                            'role' => [
+                                                'type' => 'string',
+                                                'description' => 'role',
+                                            ],
+                                            'profile' => [
+                                                'type' => 'integer',
+                                                'description' => 'profile',
+                                            ],
+                                            'lastName' => [
+                                                'type' => 'string',
+                                                'description' => 'lastName',
+                                            ],
+                                            'firstName' => [
+                                                'type' => 'string',
+                                                'description' => 'firstName',
+                                            ],
+                                            'tel' => [
+                                                'type' => 'string',
+                                                'description' => 'tel',
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                            'responses' => [
+                                200 => [
+                                    'description' => 'Utilisateur connecté',
+                                    'schema' => [
+                                        'type' => 'object',
+                                        'properties' => [
+                                            'token' => [
+                                                'type' => 'string',
+                                                'description' => 'result',
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'collectionOperations' => [
+                [
+                    'user_info' => [
+                        'method' => 'GET',
+                        'route_name' => 'user_info',
+                        'controller' => 'App\\Controller\\UserController',
+                        'swagger_context' => [
+                            'summary' => 'récupérer les informations de l\'utilisateur connecté',
+                            'responses' => [
+                                200 => [
+                                    'description' => 'Informations de l\'utilisateur connecté',
+                                    'schema' => [
+                                        'type' => 'object',
+                                        'properties' => [
+                                            'account_type' => [
+                                                'type' => 'string',
+                                                'description' => 'type de compte',
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'graphql' => [
+                [
+                    'item_query' => [],
+                    'collection_query' => [],
+                    'delete' => [],
+                    'update' => [],
+                    'create' => [],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'input' => null,
+                    'output' => null,
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
