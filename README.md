@@ -1,7 +1,7 @@
 # https://mdprog.com/
 ## Info perso
-- mail: rt1jocelyn@gmail.com
-- tel: +261 34 04 409 15 / +261 33 71 841 27
+- mail: razafimaharolazaniainaelie@gmail.com
+- tel: +261 34 75 023 91 
 
 ## Prerequises
 
